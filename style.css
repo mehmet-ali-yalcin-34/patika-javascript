@@ -1,0 +1,16 @@
+h1,h2,p,.highlight{
+    text-align: center;
+    margin: auto;
+    color: rgb(175, 96, 39);
+    padding-top: 10px;
+}
+body{
+    background-color: rgb(43, 39, 38);
+}
+.strong {
+    font-weight: bold;
+}
+.highlight{
+
+    font-size: 1.2em;
+}
