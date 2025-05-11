@@ -1,0 +1,150 @@
+/* Genel Stiller */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Başlık Stili */
+  h1 {
+    color: #ff7518;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  h2 {
+    color: #555;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  
+  /* Ana Konteyner */
+  .todo-container {
+    background-color: #ff7518;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    padding: 25px;
+    box-shadow: 0 8px 24px rgba(255, 117, 24, 0.3);
+    margin-bottom: 40px;
+  }
+  
+  /* Form Stili */
+  #new-job-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #job {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.3s;
+  }
+  
+  #job:focus {
+    box-shadow: 0 0 0 2px rgba(255, 117, 24, 0.5);
+  }
+  
+  #add-job-btn {
+    background-color: #fff;
+    color: #ff7518;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #add-job-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Todo Listesi */
+  .todo-list {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .todo-item {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    transition: all 0.3s;
+  }
+  
+  .todo-item.completed {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .todo-text {
+    cursor: pointer;
+    flex: 1;
+    font-size: 16px;
+  }
+  
+  .delete-btn {
+    background-color: transparent;
+    color: #ff4757;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-btn:hover {
+    background-color: rgba(255, 71, 87, 0.1);
+  }
+  
+  /* Boş Liste Durumu */
+  .empty-list {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    margin: 20px 0;
+  }
+  
+  /* Responsive Ayarlamalar */
+  @media screen and (max-width: 480px) {
+    .todo-container {
+      width: 95%;
+      padding: 15px;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+  }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kodluyoruz - Yapılacaklar Listesi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="snackbar.css" />
+</head>
+<body>
+
+  <h1>KODLUYORUZ</h1>
+  <h2>Yapılacaklar Listesi</h2>
+
+  <div id="snackbar">İşlem başarılı!</div>
+
+  <div class="todo-container">
+    <form id="new-job-form">
+      <input type="text" id="job" placeholder="Bugün ne yapacaksın?" name="job">
+      <button id="add-job-btn" type="submit">Ekle</button>
+    </form>
+    
+    <ul class="todo-list" id="todo-list">
+      <li class="empty-list">Yapılacak iş eklenmedi</li>
+    </ul>
+  </div>
+
+  <!-- JavaScript dosyasını modül olarak bağla -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
